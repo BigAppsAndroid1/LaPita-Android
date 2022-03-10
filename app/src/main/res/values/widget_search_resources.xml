@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SearchWidget">
+        <attr name="android:hint" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PromotedProductWidget">
+        <attr name="name" format="string" />
+        <attr name="price" format="float" />
+        <attr name="imageUrl" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PriceView">
+        <attr name="android:textSize" />
+        <attr name="android:textColor" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Dialog"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    tools:layout_height="match_parent"
+    tools:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/base_toppings_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/close"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/base_toppings_dynamic_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/heebo_medium"
+        android:gravity="center"
+        android:maxLines="3"
+        android:paddingHorizontal="40dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="משפט מהממשק" />
+
+    <ImageView
+        android:id="@+id/base_toppings_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/no_image"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/base_toppings_dynamic_title"
+        app:layout_constraintWidth_percent="0.36" />
+
+    <TextView
+        android:id="@+id/base_toppings_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="#292929"
+        android:textSize="16dp"
+        app:layout_constraintTop_toBottomOf="@id/base_toppings_image"
+        tools:text="שם המוצר" />
+
+    <View
+        android:id="@+id/base_toppings_separator"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/base_toppings_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/base_toppings_submit"
+        app:layout_constraintTop_toBottomOf="@id/base_toppings_separator">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/base_toppings_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:itemCount="10"
+            tools:listitem="@layout/item_base_topping"
+            app:spanCount="2" />
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/base_toppings_submit"
+        style="@style/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:autoSizeMaxTextSize="20sp"
+        android:autoSizeMinTextSize="14sp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/heebo_medium"
+        android:paddingHorizontal="50dp"
+        android:paddingVertical="10dp"
+        android:text="@string/next"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

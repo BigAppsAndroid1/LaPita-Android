@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957589907877",
+    "project_id": "lapita-66533",
+    "storage_bucket": "lapita-66533.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957589907877:android:97df0fb38b49479f1f204c",
+        "android_client_info": {
+          "package_name": "il.co.lapita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957589907877-bvbi6gp64uttjirph9qhbidut0ph2p2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCofzGwjtANJxmzGiDPMVSHrSVqsO5HyYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957589907877-bvbi6gp64uttjirph9qhbidut0ph2p2k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

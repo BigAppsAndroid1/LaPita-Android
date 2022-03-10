@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_pay"
+    android:layoutDirection="rtl"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText">
+
+    <il.co.lapita.widgets.MenuBar
+        android:id="@+id/menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_bar_height"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <il.co.lapita.widgets.UserDetailsWidget
+        android:id="@+id/user_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintTop_toBottomOf="@id/menu_bar" />
+
+    <TextView
+        android:id="@+id/order_details_policy_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="14sp"
+        android:autoSizeMinTextSize="8sp"
+        android:autoSizeTextType="uniform"
+        android:lines="2"
+        android:padding="2dp"
+        android:text="@string/agree_with_terms"
+        app:layout_constraintEnd_toEndOf="@id/user_details"
+        app:layout_constraintStart_toEndOf="@id/order_details_policy_checkbox"
+        app:layout_constraintTop_toBottomOf="@id/user_details"
+        app:layout_constraintVertical_bias="0" />
+
+    <CheckBox
+        android:id="@+id/order_details_policy_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/user_details"
+        android:layout_alignTop="@id/order_details_policy_text"
+        android:layout_alignBottom="@id/order_details_policy_text"
+        app:layout_constraintBottom_toBottomOf="@id/order_details_policy_text"
+        app:layout_constraintEnd_toStartOf="@id/order_details_policy_text"
+        app:layout_constraintStart_toStartOf="@id/user_details"
+        app:layout_constraintTop_toTopOf="@id/order_details_policy_text" />
+
+    <TextView
+        android:id="@+id/order_details_credit"
+        style="@style/Button.GrayWithBlueText"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/delivery_credit"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/order_details_policy_text" />
+
+    <TextView
+        android:id="@+id/order_details_cash"
+        style="@style/Button.GrayWithBlueText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/order_details_credit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:text="@string/delivery_cash_delivery"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/order_details_credit"
+        app:layout_constraintStart_toStartOf="@id/order_details_credit"
+        app:layout_constraintTop_toBottomOf="@id/order_details_credit" />
+
+    <TextView
+        android:id="@+id/order_details_sibus"
+        style="@style/Button.GrayWithBlueText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/order_details_credit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:text="תשלום סיבוס"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/order_details_credit"
+        app:layout_constraintStart_toStartOf="@id/order_details_credit"
+        app:layout_constraintTop_toBottomOf="@id/order_details_cash" />
+
+    <TextView
+        android:id="@+id/order_details_tenbis"
+        style="@style/Button.GrayWithBlueText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/order_details_credit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:text="תשלום תן ביס"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/order_details_credit"
+        app:layout_constraintStart_toStartOf="@id/order_details_credit"
+        app:layout_constraintTop_toBottomOf="@id/order_details_sibus" />
+
+    <TextView
+        android:id="@+id/order_details_goodi"
+        style="@style/Button.GrayWithBlueText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/order_details_credit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:elevation="0dp"
+        android:text="תשלום גודי"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/order_details_credit"
+        app:layout_constraintStart_toStartOf="@id/order_details_credit"
+        app:layout_constraintTop_toBottomOf="@id/order_details_tenbis" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

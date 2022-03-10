@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Dialog"
+    tools:layout_height="400dp">
+
+    <ImageView
+        android:id="@+id/promotion_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:src="@drawable/close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/promotion_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/splash_image_myshop"
+        app:layout_constraintDimensionRatio="3:2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promotion_back"
+        app:layout_constraintWidth_percent="0.6" />
+
+    <TextView
+        android:id="@+id/promotion_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/heebo_light"
+        android:text="@string/promotion_text"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promotion_logo" />
+
+    <TextView
+        android:id="@+id/promotion_coupon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/promotion_coupon"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promotion_text" />
+
+    <TextView
+        android:id="@+id/promotion_download"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/promotion_download_text"
+        android:textSize="16dp"
+        android:fontFamily="@font/heebo_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/promotion_coupon" />
+
+    <TextView
+        android:id="@+id/promotion_disclaimer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/heebo_light"
+        android:gravity="center"
+        android:text="@string/promotion_disclamer_text"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/promotion_logo"
+        app:layout_constraintStart_toStartOf="@id/promotion_logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

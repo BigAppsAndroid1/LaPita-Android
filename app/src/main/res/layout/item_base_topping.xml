@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:padding="8dp"
+    android:layout_gravity="center"
+    tools:showIn="@layout/dialog_base_toppings"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="90"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_base_topping_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_image"
+            android:layout_weight="5" />
+
+        <TextView
+            android:id="@+id/item_base_topping_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="שם תוספת "
+            android:gravity="center|top" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="40dp"
+        android:gravity="top"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:layout_height="40dp"
+        >
+
+        <CheckBox
+            android:id="@+id/item_base_topping_check"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:clickable="false"
+            android:gravity="top"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:background="@drawable/round_v_selector"
+            android:button="@null" />
+
+    </LinearLayout>
+
+</LinearLayout>
