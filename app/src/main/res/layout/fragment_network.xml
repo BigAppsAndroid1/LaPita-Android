@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
-    android:background="@drawable/network_background"
+    android:background="@drawable/splash"
     android:orientation="vertical">
 
     <TextView
@@ -21,10 +21,9 @@
         android:text="@string/network_title_text"
         android:textColor="@color/white"
         android:autoSizeMaxTextSize="26dp"
-        android:autoSizeMinTextSize="16dp"
+        android:autoSizeMinTextSize="12dp"
         android:autoSizeTextType="uniform"
-        android:textSize="26dp"
-        android:lines="1"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.1"
         app:layout_constraintTop_toTopOf="parent"
@@ -79,14 +78,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layoutDirection="ltr"
-        android:paddingStart="8dp"
-        android:paddingEnd="8dp"
+        android:paddingHorizontal="50dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.9"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1"
-        app:spanCount="2"
+        app:spanCount="1"
         tools:listitem="@layout/item_network" />
 
     <View
